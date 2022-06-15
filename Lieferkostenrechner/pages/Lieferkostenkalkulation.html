@@ -9,28 +9,41 @@
 
 </head>
 <body>
-<form>
-    <div>
-        <h1>Lieferkostenrechner</h1>
-        <h3>Lieferkosten für Sonderartikel berechnen</h3>
-        <p> Für Lieferrungen von Artikeln, die <em>nicht</em> in den Artikestammdaten vorkommen, kann das folgende formular zur berechnung der Lieferkosten herangezogen werden:</p>
-    </div>
+<div>
+    <h1>Lieferkostenrechner</h1>
+    <h3>Lieferkosten für Sonderartikel berechnen</h3>
+    <p> Für Lieferrungen von Artikeln, die <em>nicht</em> in den Artikestammdaten vorkommen, kann das folgende formular zur berechnung der Lieferkosten herangezogen werden:</p>
+</div>
 
-    <div>
-        <label for="1">Warenwert:</label><br>
-        <input id="1" type="text" ><br>
-    </div>
-    <div>
-        <label for="2">Postleitzahlengebiet-Auswahl:</label><br>
-        <input id="2" type="text"><br>
-        <p><a href="https://www.plz-suche.org/de/plz-karte">PLZ-Suche.org (Externer Link)</a></p>
-    </div>
-    <div>
-        <input type="checkbox">
+<div>
+    <label for="waren">Warenwert:</label><br>
+    <input id="waren" type="text" ><br>
+</div>
+<div>
+    <label for="2">PLZ-Gebiet</label>
+    <select id="2" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">5</option>
+        <option value="4">6</option>
+        <option value="4">7</option>
+        <option value="4">8</option>
+        <option value="4">9</option>
+        <option value="4">10</option>
+    </select>
+    <p><a href="https://www.plz-suche.org/de/plz-karte">PLZ-Suche.org (Externer Link)</a></p>
 
-    </div>
+</div>
+<div>
+    <input type="checkbox">
+</div>
 
-    <img src="../pic/256px-Postcode_map_sample_germany.png" height="256" width="256"/></form>
+<img src="../pic/256px-Postcode_map_sample_germany.png" height="256" width="256"/>
 
+<from>
+    <div><button type="button" onclick="erg">Kosten berechnen</button></div>
+    <div><output id="erg" ></output> </div>
+</from>
 </body>
 </html>
