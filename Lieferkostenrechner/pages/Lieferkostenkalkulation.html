@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//de"
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -6,44 +6,52 @@
     <meta charset="UTF-8">
     <meta name="autohr" content="Ferhat gümüs">
     <title>Lieferkostenkalkulation</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 <body>
-<div>
-    <h1>Lieferkostenrechner</h1>
-    <h3>Lieferkosten für Sonderartikel berechnen</h3>
-    <p> Für Lieferrungen von Artikeln, die <em>nicht</em> in den Artikestammdaten vorkommen, kann das folgende formular zur berechnung der Lieferkosten herangezogen werden:</p>
-</div>
+<form>
+    <div>
+        <h1>Lieferkostenrechner</h1>
+        <h3>Lieferkosten für Sonderartikel berechnen</h3>
+        <p> Für Lieferrungen von Artikeln, die <em>nicht</em> in den Artikestammdaten vorkommen, kann das folgende formular zur berechnung der Lieferkosten herangezogen werden:</p>
+    </div>
 
-<div>
-    <label for="waren">Warenwert:</label><br>
-    <input id="waren" type="text" ><br>
-</div>
-<div>
-    <label for="2">PLZ-Gebiet</label>
-    <select id="2" >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">5</option>
-        <option value="4">6</option>
-        <option value="4">7</option>
-        <option value="4">8</option>
-        <option value="4">9</option>
-        <option value="4">10</option>
-    </select>
-    <p><a href="https://www.plz-suche.org/de/plz-karte">PLZ-Suche.org (Externer Link)</a></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
 
-</div>
-<div>
-    <input type="checkbox">
-</div>
+                <label for="waren">Warenwert:</label><br>
+                <input id="waren" type="text" placeholder="Warenwert in Euro eingeben!"><br>
+            </div>
+            <div>
+                <label for="2">PLZ-Gebiet</label>
+                <select  class="from-select" id="2" >
+                    <option selected>PlZ-Gebite</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">5</option>
+                    <option value="4">6</option>
+                    <option value="4">7</option>
+                    <option value="4">8</option>
+                    <option value="4">9</option>
+                    <option value="4">10</option>
+                </select>
+                <p><a href="https://www.plz-suche.org/de/plz-karte">PLZ-Suche.org (Externer Link)</a></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="checkbox">
+    </div>
 
-<img src="../pic/256px-Postcode_map_sample_germany.png" height="256" width="256"/>
+    <div>
+        <img src="../pic/256px-Postcode_map_sample_germany.png" height="256" width="256" alt="Eine abbildung von deutschland"/>
+    </div>
 
-<from>
     <div><button type="button" onclick="erg">Kosten berechnen</button></div>
     <div><output id="erg" ></output> </div>
-</from>
+    </from>
 </body>
 </html>
