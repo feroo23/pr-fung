@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//de"
         "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
 
     <meta charset="UTF-8">
@@ -20,38 +20,38 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-
                 <label for="waren">Warenwert:</label><br>
                 <input id="waren" type="text" placeholder="Warenwert in Euro eingeben!"><br>
+                <div>
+                    <label for="2">PLZ-Gebiet</label>
+                    <select  class="from-select" id="2" >
+                        <option selected>PlZ-Gebite</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">5</option>
+                        <option value="4">6</option>
+                        <option value="4">7</option>
+                        <option value="4">8</option>
+                        <option value="4">9</option>
+                        <option value="4">10</option>
+                    </select>
+                    <p><a href="https://www.plz-suche.org/de/plz-karte">PLZ-Suche.org (Externer Link)</a></p>
+                </div>
+                <div class="from-check">
+                    <input type="checkbox" class="from-check-input" id="">
+                    <label class="from-check-label" for=""> Expresslieferung</label>
+                </div>
             </div>
-            <div>
-                <label for="2">PLZ-Gebiet</label>
-                <select  class="from-select" id="2" >
-                    <option selected>PlZ-Gebite</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">5</option>
-                    <option value="4">6</option>
-                    <option value="4">7</option>
-                    <option value="4">8</option>
-                    <option value="4">9</option>
-                    <option value="4">10</option>
-                </select>
-                <p><a href="https://www.plz-suche.org/de/plz-karte">PLZ-Suche.org (Externer Link)</a></p>
+            <div class="col-6">
+                <img src="../pic/256px-Postcode_map_sample_germany.png" height="256" width="256"/>
+                <div class="text-primary">Quelle: Gfk GeoMarketing</div>
             </div>
         </div>
-    </div>
-    <div>
-        <input type="checkbox">
-    </div>
-
-    <div>
-        <img src="../pic/256px-Postcode_map_sample_germany.png" height="256" width="256" alt="Eine abbildung von deutschland"/>
     </div>
 
     <div><button type="button" onclick="erg">Kosten berechnen</button></div>
     <div><output id="erg" ></output> </div>
-    </from>
+</form>
 </body>
 </html>
